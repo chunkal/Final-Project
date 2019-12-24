@@ -548,25 +548,14 @@ int snake_main()
 
         /* Game over ? */
 
-        while(1){
+       
 
             system("CLS");
 
             printf("你的分數: %d\n", eatenFood* 100); 
-
-            printf("遊戲結束.\n重玩? (y/n) \n");
-
-            gameKey = getch();
-
-            if(gameKey == 'y' || gameKey == 'Y' || gameKey == 'n' || gameKey == 'N'){
-
-                system("CLS");
-
-                break;
-
-            }
-
-        }
+			system("pause");
+           
+            break;
 
     }
 
@@ -609,6 +598,7 @@ int password()
 		}
 	} while (seed != guess);
 	printf("bingo!!\n");
+	
 	system("pause");
 	return 0;
 }
