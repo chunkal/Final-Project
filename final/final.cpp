@@ -25,11 +25,12 @@ int main (){
 	
 	do{
 		system("CLS");
-		printf("¿ן¾Ü¹Cְ¸\n\n");
-		printf("1.¯q´¼¹Cְ¸\n\n");
-		printf("2.³g¦Y³D\n\n");
-		printf("3.²׳·¥±K½X\n\n");
-		printf("4.ֲק¶}¹Cְ¸\n\n");
+		printf("שÝשששששששששששששששששששששש¿ן¾Ü¹Cְ¸שששששששששששששששששששששששß\nשר                              שר\n");
+		printf("שר          1.¯q´¼¹Cְ¸          שר\nשר                              שר\n");
+		printf("שר          2.³g¦Y³D            שר\nשר                              שר\n");
+		printf("שר          3.²׳·¥±K½X          שר\nשר                              שר\n");
+		printf("שר          4.ֲק¶}¹Cְ¸          שר\nשר                              שר\n");
+		printf("שדשששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששו");
 		scanf(" %c", &choice);
 		
 		switch (choice)
