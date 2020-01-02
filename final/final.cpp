@@ -27,19 +27,12 @@ int main (){
 	do{
 		system("CLS");
 <<<<<<< HEAD
-		printf("ùİùùùùùùùùùùùùùùùùùùùùùù¿ï¾Ü¹CÀ¸ùùùùùùùùùùùùùùùùùùùùùùùß\nùø                              ùø\n");
-		printf("ùø          1.¯q´¼¹CÀ¸          ùø\nùø                              ùø\n");
-		printf("ùø          2.³g¦Y³D            ùø\nùø                              ùø\n");
-		printf("ùø          3.²×·¥±K½X          ùø\nùø                              ùø\n");
-		printf("ùø          4.Â÷¶}¹CÀ¸          ùø\nùø                              ùø\n");
-		printf("ùãùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùå");
-=======
-		printf("¿ï¾Ü¹CÀ¸\n\n");
-		printf("1.¯q´¼¹CÀ¸\n\n");
-		printf("2.³g¦Y³D\n\n");
-		printf("3.OOXX\n\n");
-		printf("4.Â÷¶}¹CÀ¸\n\n");
->>>>>>> f043267f585b8e359c1360d960bbb75a0c4a8083
+		printf("â•”â•â•â•â•â•â•â•â•â•â•â•é¸æ“‡éŠæˆ²â•â•â•â•â•â•â•â•â•â•â•â•—\nâ•‘                              â•‘\n");
+		printf("â•‘          1.ç›Šæ™ºéŠæˆ²          â•‘\nâ•‘                              â•‘\n");
+		printf("â•‘          2.è²ªåƒè›‡            â•‘\nâ•‘                              â•‘\n");
+		printf("â•‘          3.çµ‚æ¥µå¯†ç¢¼          â•‘\nâ•‘                              â•‘\n");
+		printf("â•‘          4.é›¢é–‹éŠæˆ²          â•‘\nâ•‘                              â•‘\n");
+		printf("â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
 		scanf(" %c", &choice);
 		
 		switch (choice)
@@ -61,12 +54,12 @@ int main (){
 		}
 	}while(choice != '4');
 	system("CLS");
-	printf("·PÁÂ¹Cª±\n\n");
+	printf("æ„Ÿè¬éŠç©\n\n");
 	system("pause");
 	return 0;
 }
 
-//¯q´¼¹CÀ¸------------------------------------------------- 
+//ç›Šæ™ºéŠæˆ²------------------------------------------------- 
 
 int puzzle()
 {
@@ -87,7 +80,7 @@ void start(int *pPillar,int size)
 	int i;
 	for(i=0;i<size;i++)
 		pPillar[i]=rand()%2;
-	printf("¨Ï¥ÎÁä½L®Çªº¤E®c®æ1,2,3,4,6,7,8,9¹ïÀ³¹Ï§Î\n·í«ö¤U¥Ø¼ĞÁä®É¨äªşªñ¨âÁûÁä¥Ø¼ĞÁä±N·|1©M0Âà´«\n¹CÀ¸¥Øªº¬O±N¹Ï§Î¥ş³¡§ï¦¨1´NÀò³Ó!\n");		
+	printf("ä½¿ç”¨éµç›¤æ—çš„ä¹å®®æ ¼1,2,3,4,6,7,8,9å°æ‡‰åœ–å½¢\nç•¶æŒ‰ä¸‹ç›®æ¨™éµæ™‚å…¶é™„è¿‘å…©é¡†éµç›®æ¨™éµå°‡æœƒ1å’Œ0è½‰æ›\néŠæˆ²ç›®çš„æ˜¯å°‡åœ–å½¢å…¨éƒ¨æ”¹æˆ1å°±ç²å‹!\n");		
 	show(pPillar,size);
 }
 
@@ -113,9 +106,9 @@ void show(int *pPillar,int size)
 {
 	int i;
 	gotoxy(8,2); 
-	printf("\n\n\t%c¡@%c¡@%c\n",conversion(pPillar[6]),conversion(pPillar[5]),conversion(pPillar[4]));
-	printf("\t%c¡@¡@ %c\n",conversion(pPillar[7]),conversion(pPillar[3]));
-	printf("\t%c¡@%c¡@%c\n\n",conversion(pPillar[0]),conversion(pPillar[1]),conversion(pPillar[2]));
+	printf("\n\n\t%cã€€%cã€€%c\n",conversion(pPillar[6]),conversion(pPillar[5]),conversion(pPillar[4]));
+	printf("\t%cã€€ã€€ %c\n",conversion(pPillar[7]),conversion(pPillar[3]));
+	printf("\t%cã€€%cã€€%c\n\n",conversion(pPillar[0]),conversion(pPillar[1]),conversion(pPillar[2]));
 }
 
 
@@ -136,7 +129,7 @@ bool endflag(int *pPillar,int size)
 }
 
 
-void gotoxy(int xpos, int ypos) //²¾°Ê´å¼Ğ¦Ü«ü©w¦ì¸m 
+void gotoxy(int xpos, int ypos) //ç§»å‹•æ¸¸æ¨™è‡³æŒ‡å®šä½ç½® 
 {
 
 	COORD scrn;
@@ -148,9 +141,9 @@ void gotoxy(int xpos, int ypos) //²¾°Ê´å¼Ğ¦Ü«ü©w¦ì¸m
 	SetConsoleCursorPosition(hOuput, scrn);
 }
 
-//¯q´¼¹CÀ¸-------------------------------------------------------------------------------------- 
+//ç›Šæ™ºéŠæˆ²-------------------------------------------------------------------------------------- 
 
-//³g¦Y³D---------------------------------------------------------------------------------------- 
+//è²ªåƒè›‡---------------------------------------------------------------------------------------- 
 
 void showCursor(int visible)
 {
@@ -222,31 +215,31 @@ void printInformation(int food, int speed)
 
     gotoxy(55, 3);
 
-    printf("«ö + ¥[¼W¥[³Dªº³t«×");
+    printf("æŒ‰ + åŠ å¢åŠ è›‡çš„é€Ÿåº¦");
 
     gotoxy(55, 5);
 
-    printf("«ö - ´î¤Ö³Dªº³t«×");
+    printf("æŒ‰ - æ¸›å°‘è›‡çš„é€Ÿåº¦");
 
 
     gotoxy(55, 7);
 
-    printf("«ö P ¼È°±");
+    printf("æŒ‰ P æš«åœ");
 
     gotoxy(55, 9);
 
-    printf("¤À¼Æ: %d", food * 100);
+    printf("åˆ†æ•¸: %d", food * 100);
 
     gotoxy(55, 11);
 
     if(speed == 10) {
-    	printf("³t«× %3d  (The fastest)", 310-speed);
+    	printf("é€Ÿåº¦ %3d  (The fastest)", 310-speed);
 	}
     else if(speed == 300){
-    	printf("³t«×: %3d (The slowest)", 310-speed);
+    	printf("é€Ÿåº¦: %3d (The slowest)", 310-speed);
 	} 
     else {
-    	printf("³t«×: %3d              ", 310-speed);
+    	printf("é€Ÿåº¦: %3d              ", 310-speed);
 	}
 
 }
@@ -282,7 +275,7 @@ int snake_main()
 
     int i, j, gameOver = false, isFoodEaten = false, xyChanged = false;
 
-    int path = 2; // ¤è¦V
+    int path = 2; // æ–¹å‘
 
     int snakeSpeed = 100;
 
@@ -300,7 +293,7 @@ int snake_main()
 
         if(gameKey == 'n' || gameKey == 'N') break;
 
-        // ªì©lª¬ºA
+        // åˆå§‹ç‹€æ…‹
 
         setStartSite();
 
@@ -336,7 +329,7 @@ int snake_main()
 
             gotoxy(55, 13);
 
-            printf("«ö Enter ¶}©l¹CÀ¸");
+            printf("æŒ‰ Enter é–‹å§‹éŠæˆ²");
 
             gameKey = getch();
 
@@ -352,7 +345,7 @@ int snake_main()
 
             printInformation(eatenFood, snakeSpeed);
 
-            if( !isFoodEaten ){ // ¦pªG¨S­¹ª«, ÀH¾÷ºâ¥X¤@­Ó­¹ª«ªº¦ì¸m
+            if( !isFoodEaten ){ // å¦‚æœæ²’é£Ÿç‰©, éš¨æ©Ÿç®—å‡ºä¸€å€‹é£Ÿç‰©çš„ä½ç½®
 
                 foodSite.x = (rand()%23*2+1)+2;
 
@@ -370,7 +363,7 @@ int snake_main()
 
   
 
-            if( kbhit() ){ // Áä½LºVÀ»
+            if( kbhit() ){ // éµç›¤æ•²æ“Š
 
                 keyinFirst = getch();
 
@@ -454,7 +447,7 @@ int snake_main()
 
   
 
-            } else { // ¨S¦³¥ô¦ó°Ê§@«h¶¶µÛpath(¤è¦V)«e¶i
+            } else { // æ²’æœ‰ä»»ä½•å‹•ä½œå‰‡é †è‘—path(æ–¹å‘)å‰é€²
 
                 switch(path){
 
@@ -532,7 +525,7 @@ int snake_main()
 
                     Sleep(snakeSpeed);
 
-                    gotoxy(last.x, last.y); // ²M§À¤Ú
+                    gotoxy(last.x, last.y); // æ¸…å°¾å·´
 
                     printf(" ");
 
@@ -546,7 +539,7 @@ int snake_main()
 
                     isFoodEaten = false;
 
-                    if(bodyLenght<1000) bodyLenght++; // Á×§K³D¨­¶W¥X°}¦Cªø«×
+                    if(bodyLenght<1000) bodyLenght++; // é¿å…è›‡èº«è¶…å‡ºé™£åˆ—é•·åº¦
 
                     eatenFood++;
 
@@ -562,7 +555,7 @@ int snake_main()
 
             system("CLS");
 
-            printf("§Aªº¤À¼Æ: %d\n", eatenFood* 100); 
+            printf("ä½ çš„åˆ†æ•¸: %d\n", eatenFood* 100); 
 			system("pause");
            
             break;
@@ -575,74 +568,74 @@ int snake_main()
 
 }
 
-//³g¦Y³D---------------------------------------------------------------------------------------- 
+//è²ªåƒè›‡---------------------------------------------------------------------------------------- 
 
 //OOXX--------------------------------------------------------------------------------------
 
 bool winner(char map[3][3]){
-    for(int i=0;i<3;i++) if(map[i][0]!=' '&&map[i][0]==map[i][1]&&map[i][1]==map[i][2]) return true;//¦C³Ó§Q§PÂ_
-    for(int i=0;i<3;i++) if(map[0][i]!=' '&&map[0][i]==map[1][i]&&map[1][i]==map[2][i]) return true;//¦æ³Ó§Q§PÂ_
-    if(map[0][0]!=' '&&map[0][0]==map[1][1]&&map[1][1]==map[2][2]) return true;//¥ª¤W¥k¤U±×³Ó§Q§PÂ_
-    if(map[0][2]!=' '&&map[0][2]==map[1][1]&&map[1][1]==map[2][0]) return true;//¥k¤W¥ª¤U±×³Ó§Q§PÂ_
-    return false;//¦pªG¨S¦³³Ó§Q¥X²{
+    for(int i=0;i<3;i++) if(map[i][0]!=' '&&map[i][0]==map[i][1]&&map[i][1]==map[i][2]) return true;//åˆ—å‹åˆ©åˆ¤æ–·
+    for(int i=0;i<3;i++) if(map[0][i]!=' '&&map[0][i]==map[1][i]&&map[1][i]==map[2][i]) return true;//è¡Œå‹åˆ©åˆ¤æ–·
+    if(map[0][0]!=' '&&map[0][0]==map[1][1]&&map[1][1]==map[2][2]) return true;//å·¦ä¸Šå³ä¸‹æ–œå‹åˆ©åˆ¤æ–·
+    if(map[0][2]!=' '&&map[0][2]==map[1][1]&&map[1][1]==map[2][0]) return true;//å³ä¸Šå·¦ä¸‹æ–œå‹åˆ©åˆ¤æ–·
+    return false;//å¦‚æœæ²’æœ‰å‹åˆ©å‡ºç¾
 }
-/*§PÂ_¬O§_¯à¦b³o­Ó¦ì¸m©ñ¸m´Ñ¤l*/
+/*åˆ¤æ–·æ˜¯å¦èƒ½åœ¨é€™å€‹ä½ç½®æ”¾ç½®æ£‹å­*/
 bool TFset(char Player,int Switch,char map[3][3]){
-/*²Ä¤@¦C §PÂ_*/
+/*ç¬¬ä¸€åˆ— åˆ¤æ–·*/
     if(Switch==7&&map[0][0]==' '){map[0][0]=Player; return true;}
     else if(Switch==8&&map[0][1]==' '){map[0][1]=Player; return true;}
     else if(Switch==9&&map[0][2]==' '){map[0][2]=Player; return true;}
-/*²Ä¤G¦C §PÂ_*/
+/*ç¬¬äºŒåˆ— åˆ¤æ–·*/
     else if(Switch==4&&map[1][0]==' '){map[1][0]=Player; return true;}
     else if(Switch==5&&map[1][1]==' '){map[1][1]=Player; return true;}
     else if(Switch==6&&map[1][2]==' '){map[1][2]=Player; return true;}
-/*²Ä¤T¦C §PÂ_*/
+/*ç¬¬ä¸‰åˆ— åˆ¤æ–·*/
     else if(Switch==1&&map[2][0]==' '){map[2][0]=Player; return true;}
     else if(Switch==2&&map[2][1]==' '){map[2][1]=Player; return true;}
     else if(Switch==3&&map[2][2]==' '){map[2][2]=Player; return true;}
-/*¿ù»~´£¥Ü*/
-    else{ cout<<"«ö¿ù¤F°Õ µğ°Ú§A¬O¥ØÏm¿°¡H"<<endl; return false;}
+/*éŒ¯èª¤æç¤º*/
+    else{ cout<<"æŒ‰éŒ¯äº†å•¦ è›¤å•Šä½ æ˜¯ç›®æ´¨è†©ï¼Ÿ"<<endl; return false;}
 }
-/*Åã¥Ü¹h*/
+/*é¡¯ç¤ºé–˜*/
 void show(char map[3][3]){
     for(int i=0;i<3;i++){
-        cout<<" ¡Ğ¡Ğ¡Ğ¡Ğ¡Ğ¡Ğ¡Ğ¡Ğ¡Ğ"<<endl;
+        cout<<" ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼"<<endl;
         for(int j=0;j<3;j++) { cout<<"|  "<<map[i][j]<<"  "; } cout<<"|"<<endl;
-    }cout<<" ¡Ğ¡Ğ¡Ğ¡Ğ¡Ğ¡Ğ¡Ğ¡Ğ¡Ğ"<<endl;
+    }cout<<" ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼"<<endl;
 }
 
 int OOXX(){
-    char map[3][3]={{' ',' ',' '},{' ',' ',' '},{' ',' ',' '}};    //ªÅ¦a¹Ï
-    char Player='O';                                               //²Ä¤@Áû´Ñ¤l¬°O  
-    int Switch;                                                    //«ö¤Uªº¼Æ¦rÁä±±¨î¶µ
+    char map[3][3]={{' ',' ',' '},{' ',' ',' '},{' ',' ',' '}};    //ç©ºåœ°åœ–
+    char Player='O';                                               //ç¬¬ä¸€é¡†æ£‹å­ç‚ºO  
+    int Switch;                                                    //æŒ‰ä¸‹çš„æ•¸å­—éµæ§åˆ¶é …
     
-    show(map);													   //¦a¹ÏÅã¥Ü
-    while(1){												       //¹CÀ¸µL­­°j°é
-        cout<<"¡]«ö¢¯°h¥X¡A¼Æ¦rÁä¤ñ·Ó¤E®c®æ¡^"<<endl;
+    show(map);													   //åœ°åœ–é¡¯ç¤º
+    while(1){												       //éŠæˆ²ç„¡é™è¿´åœˆ
+        cout<<"ï¼ˆæŒ‰ï¼é€€å‡ºï¼Œæ•¸å­—éµæ¯”ç…§ä¹å®®æ ¼ï¼‰"<<endl;
         cin>>Switch;
-        if(Switch==0) break;									   //¦pªG¿é¤J0¡Aµ²§ô°j°é
+        if(Switch==0) break;									   //å¦‚æœè¼¸å…¥0ï¼ŒçµæŸè¿´åœˆ
         
-        system("CLS");                                             //²M°£µe­±ªº¨t²Î¦r
-        bool TFSet=TFset(Player, Switch, map);					   //§PÂ_¬O§_¯à°÷©ñ¸m´Ñ¤l¡A¨Ã©ñ¶i´Ñ¤l
-        show(map);								   				   //§ó·s¦a¹ÏÅã¥Ü
-    /*§PÂ_¬O§_¦³ª±®aÀò³Ó*/
-        if(winner(map)==true){									   //¦pªGÀò³Ó¡A¿é¥X¦a¹Ï»PÀò³Ó´£¥Ü«áµ²§ô°j°é
-            cout<<Player<<" Ä¹¤F¡C\n";
+        system("CLS");                                             //æ¸…é™¤ç•«é¢çš„ç³»çµ±å­—
+        bool TFSet=TFset(Player, Switch, map);					   //åˆ¤æ–·æ˜¯å¦èƒ½å¤ æ”¾ç½®æ£‹å­ï¼Œä¸¦æ”¾é€²æ£‹å­
+        show(map);								   				   //æ›´æ–°åœ°åœ–é¡¯ç¤º
+    /*åˆ¤æ–·æ˜¯å¦æœ‰ç©å®¶ç²å‹*/
+        if(winner(map)==true){									   //å¦‚æœç²å‹ï¼Œè¼¸å‡ºåœ°åœ–èˆ‡ç²å‹æç¤ºå¾ŒçµæŸè¿´åœˆ
+            cout<<Player<<" è´äº†ã€‚\n";
             break;                    
         }
-    /*§PÂ_¬O§_º¡¹Ï*/
+    /*åˆ¤æ–·æ˜¯å¦æ»¿åœ–*/
         bool mapover=true;
-        for(int i=0;i<3;i++)									   //·j´M¥ş¦a¹Ï
+        for(int i=0;i<3;i++)									   //æœå°‹å…¨åœ°åœ–
             for(int j=0;j<3;j++)
-                if(map[i][j]==' ') mapover=false;				   //¥u­n¦³¤@­Ó¬OªÅªº¡A¦a¹Ï´N¤£¬°º¡  
+                if(map[i][j]==' ') mapover=false;				   //åªè¦æœ‰ä¸€å€‹æ˜¯ç©ºçš„ï¼Œåœ°åœ–å°±ä¸ç‚ºæ»¿  
                 
-        if(mapover==true){										   //¦pªGº¡¹Ï¡A¿é¥Xº¡¹Ï´£¥Ü«áµ²§ô°j°é
-            cout<<"º¡¹Ï¡A¤£¤À³Ó­t¡C\n";
+        if(mapover==true){										   //å¦‚æœæ»¿åœ–ï¼Œè¼¸å‡ºæ»¿åœ–æç¤ºå¾ŒçµæŸè¿´åœˆ
+            cout<<"æ»¿åœ–ï¼Œä¸åˆ†å‹è² ã€‚\n";
             break;
         }
-    /*°j°éÄ~Äò¡A§ó´À´Ñ¤l*/
-        if(TFSet==true){										   //¦pªG¤è¤~©ñ¤J´Ñ¤lªº¿ï¶µ¦³¥¿±`°õ¦æ
-            if(Player=='O') Player='X';						       //§ó´À´Ñ¤l
+    /*è¿´åœˆç¹¼çºŒï¼Œæ›´æ›¿æ£‹å­*/
+        if(TFSet==true){										   //å¦‚æœæ–¹æ‰æ”¾å…¥æ£‹å­çš„é¸é …æœ‰æ­£å¸¸åŸ·è¡Œ
+            if(Player=='O') Player='X';						       //æ›´æ›¿æ£‹å­
             else Player='O';            
         }
     }
