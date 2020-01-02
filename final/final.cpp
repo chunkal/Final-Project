@@ -4,7 +4,7 @@
 #include <time.h>
 #include <math.h>
 #include <windows.h>
-#include<iostream>
+#include <iostream>
 #define true 1
 #define false 0
 
@@ -22,44 +22,35 @@ using namespace std;
 
 int main (){
 	
-	int choice;
+	long int choice;
 	
 	do{
 		system("CLS");
-<<<<<<< HEAD
 		printf("╔═══════════選擇遊戲═══════════╗\n║                              ║\n");
 		printf("║          1.益智遊戲          ║\n║                              ║\n");
-		printf("║          2.貪吃蛇            ║\n║                              ║\n");
-		printf("║          3.終極密碼          ║\n║                              ║\n");
-		printf("║          4.離開遊戲          ║\n║                              ║\n");
-		printf("╚══════════════════════════════╝");
-=======
-		printf("選擇遊戲\n\n");
-		printf("1.益智遊戲\n\n");
-		printf("2.貪吃蛇\n\n");
-		printf("3.OOXX\n\n");
-		printf("4.離開遊戲\n\n");
->>>>>>> f043267f585b8e359c1360d960bbb75a0c4a8083
-		scanf(" %c", &choice);
+		printf("║          2.  OOXX            ║\n║                              ║\n");
+		printf("║          3.離開遊戲          ║\n║                              ║\n");
+		printf("╚══════════════════════════════╝\n");
+		scanf(" %d", &choice);
 		
 		switch (choice)
 		{
-		case '1':
+		case 1:
 			system("CLS");
 			puzzle();
 			break;
-		case '2':
-			system("CLS");
-			snake_main();
-			break;
-		case '3':
+		case 2:
 			system("CLS");
 			OOXX();
 			break;
-		case '4':
+		case 3:
+			break;
+		case 228922:
+			system("CLS");
+			snake_main();
 			break;
 		}
-	}while(choice != '4');
+	}while(choice != 3);
 	system("CLS");
 	printf("感謝遊玩\n\n");
 	system("pause");
@@ -617,30 +608,38 @@ int OOXX(){
     int Switch;                                                    //按下的數字鍵控制項
     
     show(map);													   //地圖顯示
-    while(1){												       //遊戲無限迴圈
-        cout<<"（按０退出，數字鍵比照九宮格）"<<endl;
-        cin>>Switch;
-        if(Switch==0) break;									   //如果輸入0，結束迴圈
-        
+    while(1){                                                      //遊戲無限迴圈
+		
+		printf("（數字鍵比照九宮格）");								
+        scanf("%d",&Switch);
+        if(Switch==0){											   //如果輸入0，結束迴圈
+			break;									   
+    	}
         system("CLS");                                             //清除畫面的系統字
-        bool TFSet=TFset(Player, Switch, map);					   //判斷是否能夠放置棋子，並放進棋子
-        show(map);								   				   //更新地圖顯示
-    /*判斷是否有玩家獲勝*/
+       
+	    bool TFSet=TFset(Player, Switch, map);					   //判斷是否能夠放置棋子，並放進棋子
+        show(map);												   //更新地圖顯示
+									   				  
+    	/*判斷是否有玩家獲勝*/
         if(winner(map)==true){									   //如果獲勝，輸出地圖與獲勝提示後結束迴圈
             cout<<Player<<" 贏了。\n";
             break;                    
         }
-    /*判斷是否滿圖*/
+        
+   		/*判斷是否滿圖*/
         bool mapover=true;
-        for(int i=0;i<3;i++)									   //搜尋全地圖
-            for(int j=0;j<3;j++)
+        for(int i=0;i<3;i++){									   //搜尋全地圖
+            for(int j=0;j<3;j++){
                 if(map[i][j]==' ') mapover=false;				   //只要有一個是空的，地圖就不為滿  
-                
+            }
+        }
+        
         if(mapover==true){										   //如果滿圖，輸出滿圖提示後結束迴圈
-            cout<<"滿圖，不分勝負。\n";
+            printf("滿圖，不分勝負。\n");	
             break;
         }
-    /*迴圈繼續，更替棋子*/
+        
+  		/*迴圈繼續，更替棋子*/
         if(TFSet==true){										   //如果方才放入棋子的選項有正常執行
             if(Player=='O') Player='X';						       //更替棋子
             else Player='O';            
