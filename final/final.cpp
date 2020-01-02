@@ -26,7 +26,6 @@ int main (){
 	
 	do{
 		system("CLS");
-<<<<<<< HEAD
 		printf("╔═══════════選擇遊戲═══════════╗\n║                              ║\n");
 		printf("║          1.益智遊戲          ║\n║                              ║\n");
 		printf("║          2.貪吃蛇            ║\n║                              ║\n");
